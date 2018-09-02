@@ -1,5 +1,8 @@
 package com.gmail.kostamazanenko;
 
-public class Shape {
+public abstract class Shape {
+	
+	abstract double getPerimetr();
 
+	abstract double getArea();
 }
