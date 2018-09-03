@@ -30,6 +30,10 @@ public class Point {
 	public void setY(double y) {
 		this.y = y;
 	}
+	
+	public double getDistance(Point p) {
+		return Math.sqrt((this.x - p.x)*(this.x - p.x) + (this.y - p.y)*(this.y - p.y));
+	}
 
 	@Override
 	public String toString() {
