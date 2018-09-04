@@ -21,6 +21,7 @@ public class Main {
 		
 		
 		desk.remove(0);
+		desk.remove(1);
 		
 		desk.printQuarterDeskAndArea();
 	}
