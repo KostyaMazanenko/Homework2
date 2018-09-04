@@ -1,9 +1,9 @@
 package com.gmail.kostamazanenko;
 
 public class Triangle extends Shape {
-	Point pOne;
-	Point pTwo;
-	Point pThree;
+	private Point pOne;
+	private Point pTwo;
+	private Point pThree;
 
 	public Triangle(Point pOne, Point pTwo, Point pThree) {
 		super();
@@ -52,6 +52,11 @@ public class Triangle extends Shape {
 		// TODO Auto-generated method stub
 		double p = getPerimetr() / 2;
 		return Math.sqrt(p*(p - pOne.getDistance(pTwo))*(p - pTwo.getDistance(pThree))*(p - pThree.getDistance(pOne)));
+	}
+
+	@Override
+	public String toString() {
+		return "Triangle [pOne=" + pOne.toString() + ", pTwo=" + pTwo.toString() + ", pThree=" + pThree.toString() + "]";
 	}
 	
 	
